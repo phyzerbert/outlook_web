@@ -65,7 +65,7 @@
     <div class="modal fade" id="importModal">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form action="{{route('excel.import')}}" method="post" enctype="multipart/form-data">
+                <form action="{{route('excel.import')}}" method="post" id="importForm" enctype="multipart/form-data">
                     @csrf
                     <div class="modal-header">
                         <h4 class="modal-title">Import From XLS</h4>
@@ -93,6 +93,10 @@
         $(document).ready(function(){
             $("#btn_add").click(function(){
                 $("#importModal").modal();
+            });
+
+            $("#importForm").submit(function(){
+                $("#ajax-loading").show();
             });
         });
     </script>
