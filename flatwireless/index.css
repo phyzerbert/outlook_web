@@ -1,0 +1,40 @@
+/* ::::: https://office.flatwireless.com/owa/14.3.468.0/themes/resources/logon.css ::::: */
+
+body { background-color: rgb(255, 255, 255); text-align: center; }
+img { border: 0px none; }
+table#tblMain { margin-top: 48px; padding: 0px; }
+table.mid { width: 385px; border-collapse: collapse; padding: 0px; color: rgb(68, 68, 68); }
+table.tblConn { direction: ltr; }
+td.tdConnImg { width: 22px; }
+td.tdConn { padding-top: 15px; }
+td#mdLft { background: transparent url('lgnleft.gif') repeat-y scroll 0% 0%; width: 15px; }
+td#mdRt { background: transparent url('lgnright.gif') repeat-y scroll 0% 0%; width: 15px; }
+td#mdMid { padding: 0px 45px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; vertical-align: top; }
+td .txtpad { padding: 3px 6px 3px 0px; }
+select, table { color: rgb(68, 68, 68); }
+select, .txt { color: rgb(0, 0, 0); background-color: rgb(255, 243, 192); border: 1px solid rgb(164, 164, 164); margin: 3px 6px; }
+.txt { padding: 3px; height: 2.2em; }
+input.btn { color: rgb(255, 255, 255); background-color: rgb(235, 156, 18); border: 0px none; padding: 2px 6px; margin: 0px 6px; text-align: center; }
+.nowrap { white-space: nowrap; }
+hr { height: 0px; visibility: hidden; }
+a { color: rgb(255, 108, 0); text-decoration: none; }
+.wrng { color: rgb(255, 108, 0); }
+.disBsc { color: rgb(153, 153, 153); }
+.expl { color: rgb(153, 153, 153); }
+.w100, .txt { width: 100%; }
+.txt { margin: 0px 6px; }
+.rdo { margin: 0px 12px 0px 32px; }
+tr.expl td, tr.wrng td { padding: 2px 0px 4px; }
+tr#trSec td { padding: 3px 0px 8px; }
+td.lgnTL, td.lgnBL { width: 456px; }
+td.lgnTM { background: transparent url('lgntopm.gif') repeat-x scroll 0% 0%; width: 100%; }
+td.lgnBM { background: transparent url('lgnbotm.gif') repeat-x scroll 0% 0%; width: 100%; }
+td.lgnTR, td.lgnBR { width: 45px; }
+table.tblLgn { padding: 0px; margin: 0px; border-collapse: collapse; width: 100%; }
+/* ::::: https://office.flatwireless.com/owa/14.3.468.0/themes/resources/owafont.css ::::: */
+
+body, textarea { font-family: Segoe UI,Helvetica,Arial,sans-serif; font-size: 9.75pt; }
+.mid tr { font-size: 10pt; }
+.tdCopy { font-size: 80%; }
+select, input, textarea, button, label, pre, .awRW, .edtSubj, textarea#taAn, table#tblErr, td#tdErrHdCt, div#divFH, div#divNFld, div#divRFld, input#txtNFld, body.owaLgnBdy { font-size: 100%; }
+.mbqtTxt, input.btn, .btnOnFcs, .btnOnMseOvr, .btnOnMseDwn { font-size: 95%; }
